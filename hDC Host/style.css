@@ -7,6 +7,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root {
     font-size: 62.5%;
 
@@ -22,7 +26,7 @@ ul {
 }
 
 section {
-    padding: 8rem 0;
+    padding: 10rem 0;
 }
 
 .wrapper {
@@ -40,7 +44,10 @@ section {
 /*============================== HEADER ==============================*/
 
 .cabecalho {
+    position: fixed;
+    width: 100vw;
     background: #333d47;
+    z-index: 2;
 }
 
 .cabecalho .wrapper {
@@ -89,6 +96,12 @@ section {
     border: 2px solid var(--verde);
     transition: 0.2s;
 }
+
+.icon-menu{
+    display: none;
+}
+
+/*============================== MAIN ==============================*/
 
 .entrada {
     background: url(img/mainbanner.png) no-repeat center;
@@ -311,22 +324,31 @@ footer{
 /*============================== QUERIES ==============================*/
 
 @media screen and (max-width: 768px){
-    /* .menu-principal{
-        display: initial;
-        position: absolute;
-        top: 0;
-        right: 0;
-        background: #333d47;
-        width: 30%;
-        height: 30%;
-        margin-top: 8rem;
-    }
 
     .menu-principal ul{
-        display: initial;
-    } */
+        display: flex;
+        flex-direction: column;
+        width: 40vw;
+        position: absolute;
+        top: -100vh;
+        right: 0;
+        background: #333d47;
+        margin-top: 8rem;
+        padding: 4rem;
+        transition: .4s;
+    }
+
+    .menu-principal .ativo{
+        transition: .4s;
+        top: 0;
+    }
 
     .input{
         flex-direction: column;
+    }
+
+    .icon-menu{
+        display: initial;
+        width: 3rem;
     }
 }
