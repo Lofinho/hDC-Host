@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --verde: #3acc74;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section {
+    padding: 8rem 0;
+}
+
+.wrapper {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-inline: 2rem;
+}
+
+.wrapper-2 {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding-inline: 2rem;
+}
+
+/*============================== HEADER ==============================*/
+
+.cabecalho {
+    background: #333d47;
+}
+
+.cabecalho .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+}
+
+.logo {
+    width: 6rem;
+}
+
+.menu-principal ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.menu-principal a {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+}
+
+.menu-principal a:hover {
+    color: var(--verde);
+}
+
+.login {
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0.2s;
+}
+
+.login:hover {
+    background: #333d47;
+    border: 2px solid var(--verde);
+    transition: 0.2s;
+}
+
+.entrada {
+    background: url(img/mainbanner.png) no-repeat center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.entrada h1 {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.entrada h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+/*============================== SECTION CARDS ==============================*/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex: 1 0 30rem;
+    padding: 0.5rem;
+    box-shadow: 4px 4px 4px 4px rgb(226, 226, 226);
+}
+
+.titulo-card {
+    font-size: 1.8rem;
+}
+
+.p-card {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #87747a;
+    text-align: center;
+}
+
+.icon-card {
+    width: 6rem;
+}
+
+/*============================== SECTION PLANOS ==============================*/
+
+#precos {
+    text-align: center;
+}
+
+.titulo-section {
+    font-size: 4.2rem;
+    margin-bottom: 2.4rem;
+}
+
+.p-section {
+    font-size: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.tabela {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 10rem;
+    flex: 1;
+}
+
+.t-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    flex-basis: 26rem;
+}
+
+.top-detail {
+    position: relative;
+}
+
+.circulo {
+    position: absolute;
+    font-size: 1.6rem;
+    color: #fff;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    padding: 5rem 2rem;
+    border-radius: 100%;
+}
+
+.c-verde {
+    background: var(--verde);
+}
+
+.c-vermelho {
+    background: #f45c57;
+}
+
+.titulo-t-cards {
+    background: #202b34;
+    color: #fff;
+    padding-block: 6rem 3rem;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+}
+
+.p-tabela {
+    background: #e8e9ea;
+    color: #313131;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.select {
+    padding-block: 2rem;
+    font-size: 2.4rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/*============================== SECTION SEARCH ==============================*/
+
+#search {
+    background: #34454e;
+    color: #fff;
+}
+
+#search .wrapper-2 {
+    text-align: center;
+}
+
+.form-search input {
+    width: 100%;
+    padding: 1.5rem 2rem;
+    border: none;
+    border-radius: .4rem;
+    outline: 0;
+    font-size: 2rem;
+}
+
+
+.button-search{
+    padding: 1.5rem 2.4rem;
+    border: none;
+    border-radius: .4rem;
+    outline: 0;
+    color: #fff;
+    font-size: 2.4rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/*============================== SECTION CONTACT ==============================*/
+
+#contact{
+    text-align: center;
+}
+
+#contact .titulo-section{
+    font-size: 3.6rem;
+}
+
+#contact .p-section{
+    font-size: 2rem;
+}
+
+.form-contact{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-contact input{
+    padding: 1rem;
+    outline: 0;
+}
+
+.input{
+    display: flex;
+    gap: 2rem;
+}
+
+.input input{
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.form-contact .box-mensagem{
+    width: 100%;
+    padding-bottom: 10rem;
+    margin-top: 2rem;
+}
+
+/*============================== FOOTER ==============================*/
+
+footer{
+    text-align: center;
+    font-size: 2rem;
+    background: #34454e;
+    padding: 4rem;
+    color: #fff;
+}
+
+/*============================== QUERIES ==============================*/
+
+@media screen and (max-width: 768px){
+    /* .menu-principal{
+        display: initial;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #333d47;
+        width: 30%;
+        height: 30%;
+        margin-top: 8rem;
+    }
+
+    .menu-principal ul{
+        display: initial;
+    } */
+
+    .input{
+        flex-direction: column;
+    }
+}
