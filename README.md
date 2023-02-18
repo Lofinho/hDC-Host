@@ -2,4 +2,4 @@
 
 Link de acesso para o projeto:
 
-<a href="https://gleaming-sprinkles-9d1ca9.netlify.app/>hDCHost</a>
+<a href="https://gilded-syrniki-7e5728.netlify.app" target="_blank">hDC-Host</a>
